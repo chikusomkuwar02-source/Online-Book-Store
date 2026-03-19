@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>PageTurn - Online Book Store</title>
+
+<style>
+
+html { scroll-behavior: smooth; }
+
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f5f0e8;
+}
+
+/* NAVBAR */
+nav {
+    background: #1a1208;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav h1 { color: #c8972a; }
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+nav a:hover { color: #c8972a; }
+
+/* BANNER */
+.banner {
+    text-align: center;
+    background: #2c1a0a;
+    color: white;
+    padding: 50px;
+}
+
+.banner img {
+    width: 100%;
+    max-height: 250px;
+    border-radius: 10px;
+}
+
+/* SECTION */
+.section {
+    padding: 40px;
+    animation: fadeUp 1s ease;
+}
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h2 { text-align: center; }
+
+/* BOOKS */
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book {
+    background: white;
+    width: 230px;
+    margin: 15px;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.book:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.book img {
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+}
+
+/* FORM */
+.form {
+    background:#efdecd ;
+    width: 300px;
+    margin: 40px auto;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow:0 0 10px purple;
+
+}
+
+input, select, textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 8px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #b48395;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.form button:hover {
+    transform: translateY(-4px) scale(1.05);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.3);
+    background: #a06d80;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+<h1>PageTurn</h1>
+<div>
+<a href="#fiction">Fiction</a>
+<a href="#technical">Technical</a>
+<a href="#history">History</a>
+<a href="#form">Register</a>
+</div>
+</nav>
+
+<div class="banner">
+<h2>Welcome to Online Book Store</h2>
+<p>Explore best books in India</p>
+<img src="C:\Users\Arati\Downloads\library background.jpg">
+</div>
+
+<!-- FICTION (INDIAN) -->
+<div class="section" id="fiction">
+<h2>Fiction (Indian Authors)</h2>
+<div class="books">
+
+<div class="book">
+<img src="C:\Users\Arati\Downloads\chetan bhagat.jpg">
+<p><b>Five Point Someone</b><br>
+Author: Chetan Bhagat (2004)<br>
+Story of 3 engineering students struggling with college life and pressure.</p>
+</div>
+
+<div class="book">
+<img src="C:\Users\Arati\Downloads\TWO states.jpg">
+<p><b>2 States</b><br>
+Author: Chetan Bhagat (2009)<br>
+A love story between two people from different cultures in India.</p>
+</div>
+
+<div class="book">
+<img src="C:\Users\Arati\Downloads\the white tiger.jpg">
+<p><b>The White Tiger</b><br>
+Author: Aravind Adiga (2008)<br>
+Shows the dark reality of class struggle in India.</p>
+</div>
+
+<div class="book">
+<img src="C:\Users\Arati\Downloads\pakistan train.jpg">
+<p><b>Train to Pakistan</b><br>
+Author: Khushwant Singh (1956)<br>
+Story based on partition of India and human emotions.</p>
+</div>
+
+</div>
+</div>
+
+<!-- TECHNICAL -->
+<div class="section" id="technical">
+<h2>Technical Books</h2>
+<div class="books">
+
+<div class="book">
+<img src="C:\Users\Arati\Downloads\html.jpg">
+<p><b>HTML & CSS</b><br>
+Author: Jon Duckett (2011)<br>
+Beginner friendly guide to web design using HTML and CSS.</p>
+</div>
+
+<div class="book">
+<img src="C:\Users\Arati\Downloads\java.jpg">
+<p><b>JavaScript Guide</b><br>
+Author: David Flanagan (2011)<br>
+Complete guide to learning JavaScript programming.</p>
+</div>
+
+<div class="book">
+<img src="C:\Users\Arati\Downloads\pic.jpg">
+<p><b>Programming in C</b><br>
+Author: Dennis Ritchie (1978)<br>
+Basic concepts of C programming language.</p>
+</div>
+
+<div class="book">
+<img src="C:\Users\Arati\Downloads\dt.jpg">
+<p><b>Data Structures</b><br>
+Author: Mark Allen Weiss<br>
+Learn data structures like stack, queue, trees etc.</p>
+</div>
+
+</div>
+</div>
+
+<!-- HISTORY -->
+<div class="section" id="history">
+<h2>History / Indian Books</h2>
+<div class="books">
+
+<div class="book">
+<img src="C:\Users\Arati\Downloads\WOF.jpg">
+<p><b>Wings of Fire</b><br>
+Author: A.P.J Abdul Kalam (1999)<br>
+Autobiography of India's missile man and inspiration for youth.</p>
+</div>
+
+<div class="book">
+<img src="C:\Users\Arati\Downloads\pandit jawaharlal neharu.jpg">
+<p><b>Discovery of India</b><br>
+Author: Jawaharlal Nehru (1946)<br>
+History and culture of India explained deeply.</p>
+</div>
+
+<div class="book">
+<img src="C:\Users\Arati\Downloads\sapiens.jpg">
+<p><b>Sapiens</b><br>
+Author: Yuval Noah Harari (2011)<br>
+History of humankind from ancient to modern times.</p>
+</div>
+
+<div class="book">
+<img src="C:\Users\Arati\Downloads\india after gandhi.jpg">
+<p><b>India After Gandhi</b><br>
+Author: Ramachandra Guha (2007)<br>
+Story of India after independence.</p>
+</div>
+</div>
+
+<!-- FORM -->
+<div class="form" id="form">
+<h2>Register / Enquiry</h2>
+
+<input type="text" placeholder="Name"><br>
+<input type="email" placeholder="Email"><br>
+
+<select>
+<option>Select Category</option>
+<option>Fiction</option>
+<option>Technical</option>
+<option>History</option>
+</select><br>
+
+<textarea placeholder="Message"></textarea><br>
+
+<button>Submit</button>
+</div>
+
+</body>
+</html>
